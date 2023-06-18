@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+body{
+    background-image: url(../imgs/bg.png);
+    height: 100vh;
+}
+
+nav.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0rem 2rem;
+    color: aliceblue;
+}
+
+ul.pc-links{
+    list-style: none;
+    display: flex;
+    /* border-radius: 12px; */
+}
+
+ul.pc-links li:nth-child(1){
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+
+ul.pc-links li:nth-child(4){
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+ul.pc-links li{
+    background-color: rgba(255, 255, 255, 0.058);
+    padding: .6rem 1rem;
+    transition: background-color 300ms ease-in-out;
+}
+
+ul.pc-links li:hover{
+    background-color: rgba(0, 0, 0, 0.058);
+}
+
+a{
+    color: currentColor;
+    text-decoration: none;
+}
+
+#user-name{
+    cursor: pointer;
+    transition: all ease-in-out 300ms;
+}
+
+#user-name:hover{
+    color: goldenrod;
+}
+
+.login-title{
+    color: #FF7C74;
+}
+
+.login-screen{
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+label{
+    color: white;
+    display: block;
+    margin-bottom: .3rem;
+    font-size: 1.1rem;
+}
+
+
+input{
+    display: block;
+    width: 200px;
+    background-color: #0B0A0A13;
+    border: 1px solid #fffbfb;
+    padding: .5rem;
+    border-radius: 6px;
+    font-size: 1rem;
+    color: white;
+}
+
+input:focus{
+    outline: none;
+}
+
+.login-form{
+    padding: 4rem 4rem;
+    border-radius: 12px;
+    background-color: #88888821;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #FF7C74;
+    gap: 2rem;
+}
