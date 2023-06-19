@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    color: aliceblue;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+body{
+    background-image: url(../imgs/bg.png);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+nav.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0rem 2rem;
+    color: aliceblue;
+}
+
+ul.pc-links{
+    list-style: none;
+    display: flex;
+    /* border-radius: 12px; */
+}
+
+ul.pc-links li:nth-child(1){
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+
+ul.pc-links li:nth-child(4){
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+ul.pc-links li{
+    background-color: rgba(255, 255, 255, 0.058);
+    padding: .6rem 1rem;
+    transition: background-color 300ms ease-in-out;
+}
+
+ul.pc-links li:hover{
+    background-color: rgba(0, 0, 0, 0.058);
+}
+
+
+
+a{
+    color: currentColor;
+    text-decoration: none;
+}
+
+#user-name{
+    cursor: pointer;
+    transition: all ease-in-out 300ms;
+}
+
+#user-name:hover{
+    color: goldenrod;
+}
