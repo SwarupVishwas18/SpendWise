@@ -1,76 +1,79 @@
 <!DOCTYPE html>
-<html style="font-size: 16px;" lang="en"><head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="utf-8">
-    <meta name="keywords" content="">
-    <meta name="description" content="">
-
-    <title>Page 1</title>
-    <link rel="stylesheet" href="/assets/css/nicepage.css" media="screen">
-   <link rel="stylesheet" href="/assets/css/Page-1.css" media="screen">
-    <!-- <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
-    <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script> -->
-    <meta name="generator" content="Nicepage 5.11.2, nicepage.com">
-    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
-    
-    <!-- <script type="application/ld+json">{
-		"@context": "http://schema.org",
-		"@type": "Organization",
-		"name": "Portfolio Riddhi"
-    }</script> -->
-    <meta name="theme-color" content="#478ac9">
-    <meta property="og:title" content="Page 1">
-    <meta property="og:description" content="">
-    <meta property="og:type" content="website">
-  <meta data-intl-tel-input-cdn-path="intlTelInput/"></head>
-
-
-  <body class="u-body u-xl-mode" data-lang="en">
-    <!-- <img src="/"> -->
-    <section class="u-clearfix u-palette-1-dark-3 u-valign-middle-lg u-valign-middle-md u-valign-middle-sm u-valign-middle-xs u-section-1" id="sec-c954">
-      <img src="/assets/imgs/logo.png" class="logo" >
-      <hr style="opacity: 30%;">
-      <div class="u-clearfix u-gutter-0 u-layout-wrap u-layout-wrap-1">
-        <div class="u-gutter-0 u-layout">
-          <div class="u-layout-row">
-            <!-- left part-->
-            <div class="u-align-left-lg u-align-left-md u-align-left-sm u-align-left-xs u-container-style u-layout-cell u-shape-rectangle u-size-30-xl u-size-33-lg u-size-33-md u-size-33-sm u-size-33-xs u-layout-cell-1">
-              <div class="u-container-layout u-container-layout-1">
-                <h3 class="u-text u-text-1"> Get Started Now,</h3>
-                <p class="u-text u-text-2"> Enter your credentials to access your account</p>
-                <br><br>
-                <p class="u-text u-text-3">Name</p>
-                <input type="text" class="ip" name="name" placeholder="Max Mayfield" >
-                <!-- <div class="u-border-3 u-border-grey-10 u-preserve-proportions u-shape u-shape-rectangle u-shape-4"></div> -->
-                <!-- <p class="u-text u-text-grey-10 u-text-9">Max Mayfield</p> -->
-                <p class="u-text u-text-4">Email ID</p>
-                <input type="email" class="ip" name="mail" placeholder="max@gmail.com" >
-                <!-- <div class="u-border-2 u-border-white u-grey-25 u-opacity u-opacity-55 u-radius-12 u-shape u-shape-round u-shape-1"></div>
-                <p class="u-text u-text-grey-10 u-text-6">max@gmail.com</p> -->
-                <p class="u-text u-text-5">Password</p>
-                <input type="password" class="ip" name="pass" placeholder="min 8 characters" >
-                <!-- <div class="u-border-2 u-border-white u-grey-25 u-opacity u-opacity-55 u-radius-12 u-shape u-shape-round u-shape-2"></div> -->
-                
-                <p class="u-text u-text-6"> <input type="checkbox" style="margin-right: 20px; margin-left:-70px;"> I agree to <a href="#" class="link">Terms and Conditions</a> </p>
-                <a href="#" class="u-border-none u-btn u-btn-round u-button-style u-gradient u-hover-palette-1-light-1 u-none u-radius-6 u-btn-1">Sign Up</a>
-                <p class="u-text u-text-6">Already a member? <a href="login.html" class="link">Login</a> instead</p>
-              </div>
-              
-            </div>
-              <!-- <img class="test" src="/img/signup.png"> -->
-            
-            <div class=" u-container-style u-image u-layout-cell u-size-32-lg u-size-32-md u-size-32-sm u-size-32-xs u-size-32-xl u-image-1" data-image-width="516" data-image-height="721">
-              <div class="u-container-layout u-container-layout-2"></div>
-            </div>
-          </div>
-
-        </div>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="./assets/css/common.css" />
+    <link rel="stylesheet" href="./assets/css/signup.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="./assets/imgs/logo.png" width="84px" alt="" />
       </div>
-      
-    </section>
-    
-    
 
-   
-  
-</body></html>
+      <ul class="pc-links">
+        <li>
+          <a href=""> Home </a>
+        </li>
+        <li>
+          <a href=""> About Us </a>
+        </li>
+        <li>
+          <a href=""> Login </a>
+        </li>
+        <li>
+          <a href=""> Signup </a>
+        </li>
+      </ul>
+
+      <div id="user-profile" class="repo-link">
+        <div id="user-name">Repo Link</div>
+      </div>
+    </nav>
+
+    <section class="login-section">
+      <div class="form-section">
+        <h1>Get Started Now</h1>
+        <h3>Enter your credentials to access your account</h3>
+        <div class="input-group">
+          <label for="name">Name</label>
+          <input
+            type="text"
+            id="name"
+            placeholder="Max Mayfield"
+            class="input-field" 
+            required
+          />
+        </div>
+        <div class="input-group">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="max@gmail.com"
+            class="input-field" 
+            required
+          />
+        </div>
+        <div class="input-group">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            placeholder="Min 8 Character"
+            class="input-field" 
+            required
+          />
+        </div>
+        <button>
+          Sign Up
+        </button>
+      </div>
+      <div class="signup-pic">
+        <img src="./assets/imgs/signup.png" height="600px" alt="">
+      </div>
+    </section>
+  </body>
+</html>
