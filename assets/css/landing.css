@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 .coin-image, .bank-image, .cash-image, .card-image, .income-text h1, .income-text h3{
     position: absolute;
     animation-name: blast-up;
@@ -5,11 +6,15 @@
     opacity: 1;
 }
 
+.main-section{
+    height: 100vh;
+}
+
 .control-text{
     position: absolute;
-    top: 430px;
+    top: 65%;
     width: 40%;
-    left: 250px;
+    left: 17%;
     
     background-color: #2a2a2a88;
     padding: 2rem;
@@ -21,29 +26,29 @@
 }
 
 .coin-image{
-    top: 190px;
-    left: 400px;
+    top: 25%;
+    left: 25%;
     /* background-color: aliceblue; */
     /* animation-delay: 1s; */
     
 }
 
 .bank-image{
-    top: 110px;
-    left: 800px;
+    top: 13%;
+    left: 50%;
     /* background-color: aliceblue; */
 }
 
 .cash-image{
-    top: 410px;
-    left: 780px;
+    top: 60%;
+    left: 50%;
     z-index: 2;
     /* background-color: aliceblue; */
 }
 
 .card-image{
-    top: 220px;
-    left: 360px;
+    top: 30%;
+    left: 22%;
     /* background-color: aliceblue; */
 }
 
@@ -51,15 +56,134 @@
     color: #94FD95;
     font-size: 2.1rem;
     text-align: right ;
-    top: 120px;
-    left: 1080px;
+    top: 15%;
+    left: 70%;
 }
 
 .income-text h3{
     color: white;
     text-align: right ;
-    top: 160px;
-    left: 1120px;
+    top: 20%;
+    left: 70%;
+}
+
+.ftr h1, .contact-form h1{
+    font-size: 2.3rem;
+}
+
+section.ftr{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 50vh;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+section.contact-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.ftr-card{
+    width: 15%;
+    /* height: 100%; */
+    height: 150px;
+    padding: 2rem;
+    border-radius: 12px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-direction: column;
+    background-color: white;
+    gap: 2rem;
+    text-align: center;
+    transition: all ease-in-out 300ms;
+}
+
+input, textarea{
+    display: block;
+    width: 200px;
+    background-color: #0B0A0A13;
+    border: 1px solid #fffbfb;
+    padding: .5rem;
+    border-radius: 6px;
+    font-size: 1rem;
+    color: white;
+}
+
+input:focus, textarea:focus{
+    outline: none;
+}
+
+.ftr-card:hover{
+    transform: scale(1.1);
+}
+
+.ftr-card h3, .ftr-card div{
+    font-family: 'Inter', sans-serif;
+    
+    color: black;
+}
+
+.ftr-arena{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.input-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+.submit {
+    width: 100%;
+}
+
+.submit button{
+    background-color: #FF7C74;
+    width: 100%;
+    padding: .4rem .4rem;
+    border: none;
+    font-size: 1rem;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    transition: all ease-in-out 300ms;
+}
+
+.submit button:hover{
+    background-color: #f83c32;
+}
+
+form{
+    padding: 4rem 4rem;
+    border-radius: 12px;
+    background-color: #88888821;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #FF7C74;
+    gap: 2rem;
+}
+
+label{
+    color: white;
+    display: block;
+    margin-bottom: .3rem;
+    font-size: 1.1rem;
+}
+
+.textarea{
+    display: none;
 }
 
 
@@ -80,8 +204,73 @@
         left: -800px;
     }
     to{
-        left: 250px;
+        left: 17%;
 
     }
    
+}
+
+@media screen and (max-width: 720px) {
+    .income-text h1, .income-text h3{
+        display: none;
+    }
+    .coin-image img, .bank-image img, .cash-image img{
+        width: 150px;
+    }
+
+    .bank-image{
+        top: 25%;
+    }
+
+    .coin-image{
+        top: 30%;
+        left: 0%;
+    }
+    .card-image{
+        top: 35%;
+        left: 8%;
+    }
+
+    .cash-image{
+        top: 45%;
+    }
+
+    
+    .textarea-container{
+        display: none;
+    }
+
+
+    .control-text{
+        top: 45%;
+        font-size: .5rem;
+        padding: 1rem;
+    }
+    .card-image img{
+        width: 300px;
+    }
+    .control-desc{
+        display: none;
+    }
+    .main-section{
+        height: 50vh;
+    }
+
+    .ftr-arena{
+        width: 100%;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 2rem;
+    }
+
+    .textarea{
+        display: block;
+    }
+    
+    .ftr-card{
+        width: 50%;
+        gap: 2rem;
+        height: fit-content;
+    }
 }
