@@ -6,11 +6,12 @@
     <title>SpendWise</title>
     <link rel="stylesheet" href="./assets/css/common.css" />
     <link rel="stylesheet" href="./assets/css/landing.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <nav class="navbar">
       <div class="logo">
-        <img src="./assets/imgs/logo.png" width="124px" alt="" />
+        <img src="./assets/imgs/logo.png" width="84px" alt="" />
       </div>
 
       <ul class="pc-links">
@@ -28,7 +29,7 @@
         </li>
       </ul>
 
-      <div id="user-profile" class="user-profile">
+      <div id="user-profile" class="repo-link">
         <div id="user-name">Repo Link</div>
       </div>
     </nav>
@@ -66,5 +67,87 @@
         </div>
       </div>
     </div>
+    <section class="ftr">
+      <h1>Features</h1>
+      <div class="ftr-arena">
+        <div class="ftr-card">
+          <h3 class="ftr-title">Effortless Expense Tracking</h3>
+          <div class="ftr-text">
+            Enter your transactions, and SpendWise automatically categorizes
+            them, giving you a clear view of your spending habits.
+          </div>
+        </div>
+
+        <div class="ftr-card">
+          <h3 class="ftr-title">Budget Management Made Simple</h3>
+          <div class="ftr-text">
+            Set personalized budgets, receive alerts when you approach limits,
+            and make informed financial decisions.
+          </div>
+        </div>
+
+        <div class="ftr-card">
+          <h3 class="ftr-title">Insights at Your Fingertips</h3>
+          <div class="ftr-text">
+            Gain valuable insights into your financial health with intuitive
+            analytics and reports. Make smarter choices and stay on track.
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contact-form">
+      <h1>Contact Us</h1>
+      <form action="https://formsubmit.co/theideafactory0@gmail.com">
+        <div class="input-container">
+          <div class="email">
+            <label for="email">Email : </label>
+            <input type="email" name="email" id="email" />
+          </div>
+          <div class="name">
+            <label for="name">Name : </label>
+
+            <input type="text" name="name" id="name" />
+          </div>
+
+          <div class="textarea">
+            <textarea
+            name="message"
+            id="message"
+            placeholder="Message Here"
+            cols="30"
+            rows="10"
+          ></textarea>
+          </div>
+
+          <div class="submit">
+            <button>Submit</button>
+          </div>
+        </div>
+
+        <input type="hidden" name="_cc" value="swarupvishwas000@gmail.com" />
+
+        <input
+          type="hidden"
+          name="_autoresponse"
+          value="Thank You for Your Response to our Project..!!"
+        />
+
+        <div class="textarea-container">
+          <textarea
+            name="message"
+            id="message"
+            placeholder="Message Here"
+            cols="30"
+            rows="10"
+          ></textarea>
+        </div>
+      </form>
+    </section>
+
+    <footer>&copy; The Idea Factory - 2023</footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
