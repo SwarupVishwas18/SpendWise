@@ -47,3 +47,9 @@ input:focus{
     gap: 2rem;
 }
 
+.login-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
