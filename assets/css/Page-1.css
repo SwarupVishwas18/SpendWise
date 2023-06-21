@@ -83,11 +83,12 @@ input[type="checkbox"]
   margin: -20px 5px -50px calc(((100% - 940px) / 2) + 200px);
 }
 
-/* .u-section-1 .u-text-7 {
-  font-size: 1.25rem;
+.u-section-1 .u-text-7 {
+  /* font-size: 1.25rem;
   width: auto;
-  margin: 92px 111px 0 120px;
-} */
+  margin: 92px 111px 0 120px; */
+  margin: auto -10px 60px calc(((100% - 940px) / 2) + 120px);
+}
 .logo{
   width: 200px;
   height: 200px;
@@ -100,7 +101,7 @@ input[type="checkbox"]
   margin-top: -50px;
   margin-left: -130px;
   min-height: 950px;
-  background-image: url("/assets/img/signup.png");
+  background-image: url("/assets/imgs/signup.png");
 }
 
 .u-section-1 .u-container-layout-2 {
