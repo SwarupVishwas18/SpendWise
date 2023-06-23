@@ -11,6 +11,86 @@
         </style>
 </head>
 <body>
+    <script src="index.js"></script>
+
+    <div class="pop-up-bg" id="income-pop-up" >
+        <div class="pop-up">
+            <p class="pop-title">Income Details</p>
+            
+            <div class="row">
+                <div >
+                    <input type="text" value="Name" class="big-ip ip">
+                </div>
+                <div>
+                    <input type="date"   class="small-ip ip">
+                </div>  
+            </div>
+
+            <div class="row">
+                <div>
+                    <select class="big-ip ip pop-select">
+                        <option value="0">Category</option>
+                        <option>Collect Interset</option>
+                        <option>Salary</option>
+                        <option>Other Income</option>
+                    </select>
+                </div>
+                <div >
+                    <input type="text" value="Rate" class="small-ip ip" >
+                </div>  
+            </div>
+
+            <div class="row row-btn">
+                <button type="submit" class="pop-btn income-pop-btn">Submit</button>
+                <button class="pop-btn income-pop-btn" onclick="incomeFunction()">Cancel</button>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="pop-up-bg" id="expense-pop-up">
+        <div class="pop-up">
+            <p class="pop-title">Expense Details</p>
+            
+            <div class="row">
+                <div >
+                    <input type="text" value="Name" class="big-ip ip">
+                </div>
+                <div>
+                    <input type="date"   class="small-ip ip">
+                </div>  
+            </div>
+
+            <div class="row">
+                <div>
+                    <select class="big-ip ip pop-select">
+                        <option value="0">Category</option>
+                        <option>Food</option>
+                        <option>Education</option>
+                        <option>Stationary</option>
+                        <option>Transport</option>
+                        <option>Bill</option>
+                        <option>Entertainment</option>
+                        <option>Shopping</option>
+                        <option>Other Expense</option>
+                    </select>
+                </div>
+                <div >
+                    <input type="text" value="Rate" class="small-ip ip" >
+                </div>  
+            </div>
+
+            <div class="row row-btn">
+                <button type="submit" class="pop-btn expense-pop-btn">Submit</button>
+                <button class="pop-btn expense-pop-btn" onclick="expenseFunction()">Cancel</button>
+            </div>
+
+        </div>
+    </div>
+
+
+
     <nav class="navbar">
         <div class="logo">
             <img src="./assets/imgs/logo.png" width="124px" alt="" />
@@ -29,6 +109,9 @@
             <div id="user-name">Aizen</div>
           </div>
     </nav>
+
+    
+
     <div class="container">
     <main>
         <div class="first-section">
@@ -42,11 +125,11 @@
             </div>
             <div class="buttons">
                 <div class="income-btn-bg">
-                    <button class="income-btn btn" >Add Income</button>
+                    <button class="income-btn btn" onclick="incomeFunction()">Add Income</button>
                 </div>
 
                 <div class="expense-btn-bg">
-                    <button class="expense-btn btn" >Add Expense</button>
+                    <button class="expense-btn btn" onclick="expenseFunction()">Add Expense</button>
                 </div>
                 
             <button class="report-btn btn" >Report</button>
@@ -97,6 +180,8 @@
                         <p class="rate">200 Rs</p>
                     </div>
                 </div>
+
+               
 
             </div>
         </div>
