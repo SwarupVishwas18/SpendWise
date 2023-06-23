@@ -143,6 +143,11 @@ justify-content: center;
 align-items: center;
 padding: 30px;
 gap:1.3rem;
+
+/* 
+white-space: nowrap; 
+overflow-y: scroll;
+height: 330px; */
 }
    
 .expense-card{
@@ -191,4 +196,102 @@ padding: 20px;
 
 .income{
     background: linear-gradient(90deg, #807CFC 0%, rgba(128, 124, 252, 0.8) 97.4%);
+}
+
+
+
+.pop-up-bg{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+    background-color: #000000b5;
+    height: 100vh;
+    width: 100vw;
+    display: none;
+}
+
+.pop-up{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 60%;
+    height: 60%;
+    background-color: #e5e4e489;
+    border: solid 4px white;
+    border-radius: 20px;
+    gap: 2rem;
+}
+
+.pop-title{
+    color: black;
+    font-size: 30px;
+    font-weight: 550;
+    margin-top: -30px;
+    margin-bottom: 20px;
+    background-color: #D3D3D3;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.row{
+    width: 57%;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: black; */
+    
+}
+
+.row-btn{
+    justify-content: space-around;
+    width: 40%;
+    padding-top: 30px;
+}
+
+.ip{
+    background-color: #F8F8F8;
+    color: rgb(36, 36, 36);
+    font-size: 18px;
+    padding: 7px;
+    border-radius: 7px;
+    border-color:#F8F8F8;
+}
+
+.big-ip{
+    width: 300px;
+}
+
+.small-ip{
+    width: 150px;
+}
+
+.pop-btn{
+     width: 150px;
+     height: 45px;
+     border-radius: 5px;
+     color: black;
+     font-weight: bold;
+     font-size: 17px;
+}
+
+.income-pop-btn{
+    background-color: #FF7C74;
+    
+}
+
+.expense-pop-btn{
+    background-color: #807CFC;
+}
+
+.pop-select{
+    width: 313px;
+}
+select>option{
+    font-size: 18px;
+    color: #201c24;
+    height: 50px;
+    padding: 10px;
+    border: 3px solid rgb(41, 18, 18);
 }
