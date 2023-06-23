@@ -1,0 +1,54 @@
+
+
+button{
+    background-color: #FF7C74;
+    padding: .4rem 5rem;
+    border: none;
+    font-size: 1rem;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    transition: all ease-in-out 300ms;
+}
+
+ button:hover{
+    background-color: #f83c32;
+}
+
+input, textarea{
+    display: block;
+    width: 200px;
+    background-color: #0B0A0A13;
+    border: 1px solid #fffbfb;
+    padding: .5rem;
+    border-radius: 6px;
+    font-size: 1rem;
+    color: white;
+}
+
+input:focus, textarea:focus{
+    outline: none;
+}
+
+.login-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-section{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 2rem;
+    background-color: #88888821;
+    border: 1px solid #FF7C74;
+    padding: 2rem;
+    border-radius: 12px;
+}
+
+@media screen and (max-width: 720px) {
+    .signup-pic{
+        display: none;
+    }
+}
