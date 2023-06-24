@@ -53,3 +53,23 @@ input:focus{
     justify-content: space-around;
 }
 
+button{
+    background-color: #FF7C74;
+    padding: .4rem 5rem;
+    border: none;
+    font-size: 1rem;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    transition: all ease-in-out 300ms;
+}
+
+ button:hover{
+    background-color: #f83c32;
+}
+
+
+@media screen and (max-width: 720px) {
+    .login-img{
+        display: none;
+    }
+}
