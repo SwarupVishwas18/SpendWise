@@ -2,6 +2,22 @@ var nameDOM = document.querySelector("#name");
 var emailDOM = document.querySelector("#email");
 var passwordDOM = document.querySelector("#password");
 
+// create ceasar cipher encryption function to encrypt password by shifting each character by 5 places
+
+function encryptPassword(password) {
+  let encryptedPassword = "";
+  for (let i = 0; i < password.length; i++) {
+    let ascii = password.charCodeAt(i);
+    if (ascii >= 65 && ascii <= 90) {
+      ascii = ((ascii - 65 + 5) % 26) + 65;
+    } else if (ascii >= 97 && ascii <= 122) {
+      ascii = ((ascii - 97 + 5) % 26) + 97;
+    }
+    encryptedPassword += String.fromCharCode(ascii);
+  }
+  return encryptedPassword;
+}
+
 document.querySelector("#signup-btn").addEventListener("click", () => {
   let name = nameDOM.value;
   let email = emailDOM.value;
@@ -14,7 +30,7 @@ document.querySelector("#signup-btn").addEventListener("click", () => {
   if (checkIfUserExist(email, name)) {
     alert("Email or Username Already Exists!!");
   } else {
-    addUser(name, email, password);
+    addUser(name, email, encryptPassword(password));
   }
 });
 

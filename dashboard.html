@@ -19,29 +19,45 @@
 
         <div class="row">
           <div>
-            <input type="text" value="Name" class="big-ip ip" />
+            <input
+              type="text"
+              id="inc-name"
+              placeholder="Name"
+              class="big-ip ip"
+            />
           </div>
           <div>
-            <input type="date" class="small-ip ip" />
+            <input type="date" id="inc-date" class="small-ip ip" />
           </div>
         </div>
 
         <div class="row">
           <div>
-            <select class="big-ip ip pop-select">
+            <select id="inc-cat" class="big-ip ip pop-select">
               <option value="0">Category</option>
-              <option>Collect Interset</option>
-              <option>Salary</option>
-              <option>Other Income</option>
+              <option value="1">Collect Interset</option>
+              <option value="2">Salary</option>
+              <option value="3">Other Income</option>
             </select>
           </div>
           <div>
-            <input type="text" value="Rate" class="small-ip ip" />
+            <input
+              type="number"
+              id="inc-rate"
+              placeholder="Rate"
+              class="small-ip ip"
+            />
           </div>
         </div>
 
         <div class="row row-btn">
-          <button type="submit" class="pop-btn income-pop-btn">Submit</button>
+          <button
+            type="submit"
+            id="income-submit-btn"
+            class="pop-btn income-pop-btn"
+          >
+            Submit
+          </button>
           <button class="pop-btn income-pop-btn" onclick="incomeFunction()">
             Cancel
           </button>
@@ -55,34 +71,50 @@
 
         <div class="row">
           <div>
-            <input type="text" value="Name" class="big-ip ip" />
+            <input
+              type="text"
+              placeholder="Name"
+              id="exp-name"
+              class="big-ip ip"
+            />
           </div>
           <div>
-            <input type="date" class="small-ip ip" />
+            <input type="date" id="exp-date" class="small-ip ip" />
           </div>
         </div>
 
         <div class="row">
           <div>
-            <select class="big-ip ip pop-select">
+            <select id="exp-cat" class="big-ip ip pop-select">
               <option value="0">Category</option>
-              <option>Food</option>
-              <option>Education</option>
-              <option>Stationary</option>
-              <option>Transport</option>
-              <option>Bill</option>
-              <option>Entertainment</option>
-              <option>Shopping</option>
-              <option>Other Expense</option>
+              <option value="1">Food</option>
+              <option value="2">Education</option>
+              <option value="3">Stationary</option>
+              <option value="4">Transport</option>
+              <option value="5">Bill</option>
+              <option value="6">Entertainment</option>
+              <option value="7">Shopping</option>
+              <option value="8">Other Expense</option>
             </select>
           </div>
           <div>
-            <input type="text" value="Rate" class="small-ip ip" />
+            <input
+              type="number"
+              id="exp-rate"
+              placeholder="Rate"
+              class="small-ip ip"
+            />
           </div>
         </div>
 
         <div class="row row-btn">
-          <button type="submit" class="pop-btn expense-pop-btn">Submit</button>
+          <button
+            type="submit"
+            id="expense-submit-btn"
+            class="pop-btn expense-pop-btn"
+          >
+            Submit
+          </button>
           <button class="pop-btn expense-pop-btn" onclick="expenseFunction()">
             Cancel
           </button>
@@ -116,7 +148,7 @@
               <p class="curr-bal-title">Current Balance</p>
               <!-- <img src="./assets/imgs/balance-icon.png"/> -->
             </div>
-            <p class="curr-bal-rate">50000 Rs</p>
+            <p class="curr-bal-rate" id="balance">50000 Rs</p>
           </div>
           <div class="buttons">
             <div class="income-btn-bg">
@@ -138,15 +170,28 @@
         <!-- <div class="income-expense"> -->
         <div class="second-section">
           <div class="expense">
-            <p>106</p>
-            <p>Expense</p>
-            <img
-              src="./assets/imgs/expense-icon.png"
-              width="50px"
-              height="50px"
-            />
+            <p style="font-size: 40px" id="view-expense">106</p>
+            <div class="image-exp">
+              <img
+                src="./assets/imgs/expense-icon.png"
+                width="50px"
+                height="50px"
+              />
+              <p>Expense</p>
+            </div>
           </div>
-          <div class="expense-card-bg">
+          <div class="expense-card-bg" id="expense-card-arena">
+            <div class="expense-card">
+              <div class="row1">
+                <p class="title">VIT Canteen</p>
+                <p class="date">20-06-2023</p>
+              </div>
+              <div class="row2">
+                <p class="category">Food</p>
+                <p class="rate">200 Rs</p>
+              </div>
+            </div>
+
             <div class="expense-card">
               <div class="row1">
                 <p class="title">VIT Canteen</p>
@@ -183,26 +228,17 @@
         </div>
         <div class="third-section">
           <div class="expense income">
-            <img
-              src="./assets/imgs/income-icon.png"
-              width="50px"
-              height="50px"
-            />
-            <p>Income</p>
-            <p>106</p>
-          </div>
-          <div class="expense-card-bg">
-            <div class="expense-card">
-              <div class="row1">
-                <p class="title">VIT Canteen</p>
-                <p class="date">20-06-2023</p>
-              </div>
-              <div class="row2">
-                <p class="category">Food</p>
-                <p class="rate">200 Rs</p>
-              </div>
+            <div class="image-inc">
+              <img
+                src="./assets/imgs/income-icon.png"
+                width="50px"
+                height="50px"
+              />
+              <p>Income</p>
             </div>
-
+            <p style="font-size: 40px" id="view-income">106</p>
+          </div>
+          <div class="expense-card-bg" id="income-card-arena">
             <div class="expense-card">
               <div class="row1">
                 <p class="title">VIT Canteen</p>
@@ -234,6 +270,7 @@
         window.location.href = "./login.html";
       }
     </script>
+    <script src="./assets/js/dashboard.js"></script>
     <script src="./assets/js/logout.js"></script>
   </body>
 </html>
