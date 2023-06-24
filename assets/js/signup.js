@@ -11,14 +11,14 @@ document.querySelector("#signup-btn").addEventListener("click", () => {
     alert("You have not filled all the details..!!");
     return;
   }
-  if (checkIfUserExist(email)) {
-    alert("Email Already Exists!!");
+  if (checkIfUserExist(email, name)) {
+    alert("Email or Username Already Exists!!");
   } else {
     addUser(name, email, password);
   }
 });
 
-function checkIfUserExist(email) {
+function checkIfUserExist(email, name) {
   if (localStorage.getItem("users") == null) {
     return false;
   }
@@ -28,6 +28,10 @@ function checkIfUserExist(email) {
     users.filter((user) => {
       console.log(user.email);
       return user.email == email;
+    }).length > 0 ||
+    users.filter((user) => {
+      console.log(user.name);
+      return user.name == name;
     }).length > 0
   ) {
     console.log(email);
@@ -47,6 +51,7 @@ function addUser(name, email, password) {
     };
     users.push(user);
     localStorage.setItem("users", JSON.stringify(users));
+    localStorage.setItem("loginedUser", JSON.stringify(user));
   } else {
     // if users array already exists then add user in it
     let users = JSON.parse(localStorage.getItem("users"));
@@ -57,6 +62,7 @@ function addUser(name, email, password) {
     };
     users.push(user);
     localStorage.setItem("users", JSON.stringify(users));
+    localStorage.setItem("loginedUser", JSON.stringify(user));
   }
   alert("User Added Successfully!!");
   window.location.href = "dashboard.html";

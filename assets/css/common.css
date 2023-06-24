@@ -47,6 +47,10 @@ ul.pc-links li{
     transition: background-color 300ms ease-in-out;
 }
 
+#logout-btn{
+    cursor: pointer;
+}
+
 ul.pc-links li:hover{
     background-color: rgba(0, 0, 0, 0.058);
 }
@@ -63,12 +67,12 @@ a{
     text-decoration: none;
 }
 
-#user-name{
+#logout-btn{
     cursor: pointer;
     transition: all ease-in-out 300ms;
 }
 
-#user-name:hover{
+#logout-btn:hover{
     color: goldenrod;
 }
 
