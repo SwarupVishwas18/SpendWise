@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="en"><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="/spendwise/assets/css/nicepage.css" media="screen">
+    <link rel="stylesheet" href="/spendwise/assets/css/Home.css" media="screen">
+    <script class="u-script" type="text/javascript" src="/spendwise/assets/js/jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="/spendwise/assets/js/nicepage.js" defer=""></script>
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+    <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "spendwise"
+}</script>
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="Home">
+    <meta property="og:type" content="website">
+  <meta data-intl-tel-input-cdn-path="intlTelInput/"></head>
+  <body class="u-body u-overlap u-xl-mode" data-lang="en"><header class="u-clearfix u-header u-palette-1-dark-2 u-header" id="sec-bd2b"><nav class="u-menu u-menu-one-level u-offcanvas u-menu-1">
+        <div class="menu-collapse" style="font-size: 1.125rem; letter-spacing: 0px;">
+          <a class="u-button-style u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-text-active-color u-custom-text-hover-color u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="#">
+            <svg class="u-svg-link" viewBox="0 0 24 24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu-hamburger"></use></svg>
+            <svg class="u-svg-content" version="1.1" id="menu-hamburger" viewBox="0 0 16 16" x="0px" y="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect>
+</g></svg>
+          </a>
+        </div>
+        <div class="u-custom-menu u-nav-container">
+          <ul class="u-nav u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-grey-40 u-text-hover-white" href="dashboard.html" style="padding: 10px 20px;">Home</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-grey-40 u-text-hover-white" href="aboutus.html" style="padding: 10px 20px;">About</a>
+</li></ul>
+        </div>
+        <div class="u-custom-menu u-nav-container-collapse">
+          <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
+            <div class="u-inner-container-layout u-sidenav-overflow">
+              <div class="u-menu-close"></div>
+              <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="#">Home</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="#">About</a>
+</li></ul>
+            </div>
+          </div>
+          <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+        </div>
+      </nav>
+      <img class="u-image u-image-contain u-image-default u-image-1" src="/spendwise/assets/images/logo1.png" alt="" data-image-width="360" data-image-height="189"></header>
+    <!-- Section-Other screen -->
+      <section class="u-clearfix u-hidden-xl u-palette-1-dark-2 u-section-1" id="sec-a2cb">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="u-container-style u-expanded-width-xs u-grey-15 u-group u-opacity u-opacity-55 u-radius-10 u-shape-round u-group-1">
+          <div class="u-container-layout u-container-layout-1">
+            <!-- other screen- multiple line chart -->
+          <canvas id="myChartot1" style="width:100%;max-width:auto;padding: 30px 10px 10px 10px;margin-top: -10px;"></canvas>
+          <script>
+          const xValuesot1 = [100,200,300,400,500,600,700,800,900,1000];
+
+          new Chart("myChartot1", {
+            type: "line",
+            data: {
+              labels: xValuesot1,
+              datasets: [{ 
+                data: [1600,1700,1700,1900,2000,2700,4000,5000,6000,7000],
+                borderColor: "orange",
+                fill: false
+              }, { 
+                data: [300,700,2000,5000,6000,4000,2000,1000,200,100],
+                borderColor: "blue",
+                fill: false
+              }]
+            },
+            options: {
+              legend: {display: false}
+            }
+          });
+          </script>
+            
+          </div>
+        </div>
+        <div class="u-clearfix u-layout-wrap u-layout-wrap-1">
+          <div class="u-layout">
+            <div class="u-layout-row">
+              <div class="u-container-style u-layout-cell u-palette-2-light-1 u-size-60 u-layout-cell-1">
+                <div class="u-container-layout u-container-layout-2">
+                  <h5 class="u-custom-font u-font-ubuntu u-text u-text-body-color u-text-default-lg u-text-default-md u-text-default-sm u-text-default-xs u-text-1">Expense:</h5>
+                  <!-- Expense- other screens-doughnut chart -->
+                  <canvas id="myChartot" style="width:100%;max-width:auto;height: 180px;"></canvas>
+                  <script>
+                    var xValuesot = ["Food", "Entertainment", "Travel"];
+                    var yValuesot = [55, 49, 44];
+                    var barColors = [
+                      "#2b5797",
+                      "#e8c3b9",
+                      "#1e7145"
+                    ];
+                    
+                    new Chart("myChartot", {
+                      type: "doughnut",
+                      data: {
+                        labels: xValuesot,
+                        datasets: [{
+                          backgroundColor: barColors,
+                          data: yValuesot
+                        }]
+                      },
+                      // options: {
+                      //   title: {
+                      //     display: true,
+                      //     text: "World Wide Wine Production 2018"
+                      //   }
+                      // }
+                    });
+                    </script>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="u-hidden-lg u-hidden-md u-hidden-sm u-hidden-xs u-opacity u-opacity-65 u-palette-1-light-3 u-radius-20 u-shape u-shape-round u-shape-1">
+          
+        </div>
+        <div class="u-opacity u-opacity-65 u-palette-1-light-3 u-preserve-proportions u-radius-20 u-shape u-shape-round u-shape-2"></div>
+        <h5 class="u-custom-font u-font-ubuntu u-hidden-xl u-text u-text-default-xs u-text-grey-90 u-text-2">Current Balance:</h5>
+        <h5 class="amount u-custom-font u-font-ubuntu u-hidden-xl u-text u-text-default-xs u-text-grey-90 u-text-3">30000/-</h5>
+        <h5 class="u-custom-font u-font-ubuntu u-hidden-xl u-text u-text-default-xs u-text-grey-90 u-text-4">Current Balance:</h5>
+        <div class="u-container-style u-group u-palette-1-base u-shape-rectangle u-group-2">
+          <div class="u-container-layout u-container-layout-3">
+            <!--Income- Other Screens -->
+            <h6 class="u-custom-font u-font-ubuntu u-text u-text-body-color u-text-default-lg u-text-default-md u-text-default-sm u-text-default-xs u-text-5">Income:</h6>
+            <canvas id="myChartot2" style="width:100%;max-width:auto;height: 170px;"></canvas>
+            <script>
+              var xValuesot2 = ["Income", "Rent", "Other"];
+              var yValuesot2 = [55, 49, 44];
+              var barColors = [
+                "#b91d47",
+                "#00aba9",
+                "#2b5797",
+              ];
+              
+              new Chart("myChartot2", {
+                type: "doughnut",
+                data: {
+                  labels: xValuesot2,
+                  datasets: [{
+                    backgroundColor: barColors,
+                    data: yValuesot2
+                  }]
+                },
+                // options: {
+                //   title: {
+                //     display: true,
+                //     text: "World Wide Wine Production 2018"
+                //   }
+                // }
+              });
+              </script> 
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section-Laptop screen -->
+    <section class="u-clearfix u-hidden-lg u-hidden-md u-hidden-sm u-hidden-xs u-palette-1-dark-2 u-section-2" id="sec-d438">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="u-opacity u-opacity-70 u-palette-5-base u-radius-10 u-shape u-shape-round u-shape-1">
+          <!-- laptop screen- multiple line chart -->
+          <canvas id="myChart" style="width:100%;max-width:850px;padding: 30px 60px 40px 60px;"></canvas>
+          <script>
+          const xValues = [100,200,300,400,500,600,700,800,900,1000];
+
+          new Chart("myChart", {
+            type: "line",
+            data: {
+              labels: xValues,
+              datasets: [{ 
+                data: [1600,1700,1700,1900,2000,2700,4000,5000,6000,7000],
+                borderColor: "orange",
+                fill: false
+              }, { 
+                data: [300,700,2000,5000,6000,4000,2000,1000,200,100],
+                borderColor: "blue",
+                fill: false
+              }]
+            },
+            options: {
+              legend: {display: false}
+            }
+          });
+          </script>
+        </div>
+        <div class="u-opacity u-opacity-70 u-palette-1-light-3 u-preserve-proportions u-radius-15 u-shape u-shape-round u-shape-2"></div>
+        <h5 class="u-custom-font u-font-ubuntu u-text u-text-body-color u-text-default u-text-1">Current Balance:</h5>
+        <h5 class="u-custom-font u-font-ubuntu u-text u-text-body-color u-text-2">30000/-</h5>
+        <div class="u-container-style u-group u-palette-2-light-1 u-group-1">
+          <div class="u-container-layout u-container-layout-1">
+            <!-- Expense-laptop screen -->
+            <h6 class="u-custom-font u-font-ubuntu u-text u-text-body-color u-text-3">Expense:</h6>
+            <canvas id="myChart1" style="width:100%;max-width:auto;height: 250px;"></canvas>
+            <script>
+              var xValues1 = ["Food", "Entertainment", "Travel", "Utility Bills", "Rent"];
+              var yValues1 = [55, 49, 44, 24, 15];
+              var barColors = [
+                "#b91d47",
+                "#00aba9",
+                "#2b5797",
+                "#e8c3b9",
+                "#1e7145"
+              ];
+              
+              new Chart("myChart1", {
+                type: "doughnut",
+                data: {
+                  labels: xValues1,
+                  datasets: [{
+                    backgroundColor: barColors,
+                    data: yValues1
+                  }]
+                },
+                // options: {
+                //   title: {
+                //     display: true,
+                //     text: "World Wide Wine Production 2018"
+                //   }
+                // }
+              });
+              </script>
+          </div>
+        </div>
+        <div class="u-container-style u-group u-palette-1-light-1 u-group-2">
+          <div class="u-container-layout u-container-layout-2">
+            <!-- Income-Laptop screen -->
+            <h6 class="u-custom-font u-font-ubuntu u-text u-text-body-color u-text-default u-text-4">Income:</h6>
+            <canvas id="myChart2" style="width:100%;max-width:auto;height: 200px;"></canvas>
+            <script>
+              var xValues2 = ["Income", "Rent", "Other"];
+              var yValues2 = [55, 49, 44];
+              var barColors = [
+                "#b91d47",
+                "#00aba9",
+                "#2b5797",
+              ];
+              
+              new Chart("myChart2", {
+                type: "doughnut",
+                data: {
+                  labels: xValues2,
+                  datasets: [{
+                    backgroundColor: barColors,
+                    data: yValues2
+                  }]
+                },
+                // options: {
+                //   title: {
+                //     display: true,
+                //     text: "World Wide Wine Production 2018"
+                //   }
+                // }
+              });
+              </script>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+    
+    <!-- <section class="u-backlink u-clearfix u-grey-80">
+      <a class="u-link" href="https://nicepage.com/website-templates" target="_blank">
+        <span>Free Website Templates</span>
+      </a>
+      <p class="u-text">
+        <span>created with</span>
+      </p>
+      <a class="u-link" href="https://nicepage.me" target="_blank">
+        <span>Best Free Website Builder</span>
+      </a>. 
+    </section> -->
+  
+</body></html>
