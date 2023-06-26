@@ -18,6 +18,12 @@ function encryptPassword(password) {
   return encryptedPassword;
 }
 
+// create function for email id validation
+function validateEmail(email) {
+  let regex = /^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$/;
+  return regex.test(email);
+}
+
 document.querySelector("#signup-btn").addEventListener("click", () => {
   let name = nameDOM.value;
   let email = emailDOM.value;
@@ -25,6 +31,10 @@ document.querySelector("#signup-btn").addEventListener("click", () => {
 
   if (name == "" || email == "" || password == "") {
     alert("You have not filled all the details..!!");
+    return;
+  }
+  if (!validateEmail(email)) {
+    alert("Please enter valid email id");
     return;
   }
   if (checkIfUserExist(email, name)) {
