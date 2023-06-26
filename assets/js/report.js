@@ -1,5 +1,3 @@
-// const now = new Date();
-
 function getUser() {
   var user = JSON.parse(localStorage.getItem("loginedUser"));
   return user;
@@ -36,7 +34,7 @@ function loadLast7DaysData() {
 
   // create total income for each day from last 7 days
   let totalIncome = [];
-  for (let i = 0; i < 7; i++) {
+  for (let i = 0; i <= 7; i++) {
     let total = 0;
     for (let j = 0; j < last7DaysIncome.length; j++) {
       if (last7DaysIncome[j].date === dateStr) {
@@ -66,8 +64,8 @@ function loadLast7DaysData() {
 
   console.log(totalIncome);
   console.log(last7DaysIncome);
-  totalIncome.reverse();
-  totalExpense.reverse();
+  // totalIncome.reverse();
+  // totalExpense.reverse();
 
   return {
     totalIncome,
@@ -77,10 +75,19 @@ function loadLast7DaysData() {
 
 // get dates from all last 7 days including this one  and store it in an array
 
-const date = new Date()
-const today = date.getDate()
+const date = new Date();
+const today = date.getDate();
 
-const xValuesot1 = [today-6, today-5, today-4, today-3, today-2, today-1, today];
+const xValuesot1 = [
+  today - 6,
+  today - 5,
+  today - 4,
+  today - 3,
+  today - 2,
+  today - 1,
+  today,
+];
+
 
 function getCatExpense(cat) {
   let expenses = getExpenses();
@@ -162,7 +169,15 @@ new Chart("myChartot2", {
   },
 });
 
-const xValues = [today-6, today-5, today-4, today-3, today-2, today-1, today];
+const xValues = [
+  today - 6,
+  today - 5,
+  today - 4,
+  today - 3,
+  today - 2,
+  today - 1,
+  today,
+];
 
 new Chart("myChart", {
   type: "line",
@@ -202,6 +217,45 @@ var yValues1 = [
   getCatExpense("5"),
 ];
 var barColors = ["#b91d47", "#00aba9", "#2b5797", "#e8c3b9", "#1e7145"];
+
+new Chart("myChartot1", {
+  type: "line",
+  data: {
+    labels: xValuesot1,
+    datasets: [{ 
+      data: loadLast7DaysData().totalIncome,
+      borderColor: "orange",
+      fill: false
+    }, { 
+      data: loadLast7DaysData().totalExpense,
+      borderColor: "blue",
+      fill: false
+    }]
+  },
+  options: {
+    legend: {display: false}
+  }
+});
+
+
+new Chart("myChart", {
+  type: "line",
+  data: {
+    labels: xValues,
+    datasets: [{ 
+      data: loadLast7DaysData().totalIncome,
+      borderColor: "orange",
+      fill: false
+    }, { 
+      data: loadLast7DaysData().totalExpense,
+      borderColor: "blue",
+      fill: false
+    }]
+  },
+  options: {
+    legend: {display: false}
+  }
+});
 
 new Chart("myChart1", {
   type: "doughnut",
