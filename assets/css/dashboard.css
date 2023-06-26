@@ -193,7 +193,9 @@ padding: 20px;
     color: rgb(175, 175, 175);
 }
 
-
+#logout-btn2{
+    display: none;
+}
 
 .rate{
     font-size: 20px;
@@ -307,9 +309,6 @@ select>option{
     border: 3px solid rgb(41, 18, 18);
 }
 
-/* Responsive Design */
-
-
 
 @media screen and (max-width: 720px)
 {
@@ -349,4 +348,13 @@ select>option{
         padding: 25px;
     }
 
+}
+
+@media screen and (max-width: 720px) {
+    #logout-btn2{
+        display: block;
+    }
+    #logout-btn{
+        display: none;
+    }
 }

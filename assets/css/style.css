@@ -50,16 +50,15 @@ input:focus{
 .login-section{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    height: 90%;
 }
 
 button{
     background-color: #FF7C74;
     padding: .4rem 5rem;
     border: none;
-    font-size: 1rem;
-    border-bottom-left-radius: 12px;
-    border-bottom-right-radius: 12px;
+    font-size: 1.2rem;
     transition: all ease-in-out 300ms;
 }
 
